@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         // Set click listener for the button
         button.setOnClickListener {
-            textView.text = "Button was clicked! Hello from Android!"
+            textView.text = "Button was clicked by Prof! Hello from Opeyemi Oguntayo!"
         }
     }
 }
