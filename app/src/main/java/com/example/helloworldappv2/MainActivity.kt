@@ -1,6 +1,7 @@
 package com.example.helloworldappv2
 
 import android.os.Bundle
+import android.graphics.Color
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,10 +14,16 @@ class MainActivity : AppCompatActivity() {
         // Find views by their IDs
         val textView = findViewById<TextView>(R.id.textView)
         val button = findViewById<Button>(R.id.button)
+        val colorButton = findViewById<Button>(R.id.colorButton)
 
-        // Set click listener for the button
+        // Set click listener for the first button
         button.setOnClickListener {
-            textView.text = "Button was clicked by Prof! Hello from O O.!"
+            textView.text = "Hey Prof, I know you clicked me. O O. is saying HI."
+        }
+
+        // Set click listener for the color button
+        colorButton.setOnClickListener {
+            textView.setTextColor(Color.RED)
         }
     }
 }
