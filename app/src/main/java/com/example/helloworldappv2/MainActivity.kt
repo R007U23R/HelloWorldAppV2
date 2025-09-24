@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         // Set click listener for the first button
         button.setOnClickListener {
-            textView.text = "Hey Prof, I know you clicked me. O O. is saying HI."
+            textView.text = "Button was clicked! Hello from O.O.!"
         }
 
         // Set click listener for the color button
